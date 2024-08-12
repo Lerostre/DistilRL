@@ -1,0 +1,23 @@
+discounted_thompson:
+  archtype: SMPyBandits.Policies.DiscountedThompson
+  params:
+    gamma: 0.95
+    alpha: 1
+discounted_klucb:
+  archtype: SMPyBandits.Policies.DiscountedklUCB
+  params:
+    gamma: 0.95
+klucb:
+  archtype: SMPyBandits.Policies.klUCB
+  params: {}
+ucbalpha:
+  archtype: SMPyBandits.Policies.UCBalpha
+  params:
+    alpha: 0.5
+emp_means:
+  archtype: SMPyBandits.Policies.EmpiricalMeans
+  params: {}
+exp3:
+  archtype: SMPyBandits.Policies.Exp3
+  params:
+    gamma: 0.01
