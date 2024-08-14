@@ -1,12 +1,10 @@
 defaults:
   - bandit/arm@_here_
   - bandit/env@_here_
+  - bandit/policies@_here_
+  - bandit/dataset@_here_
 
 seed: 42
 
-train:
-  n_arms: 10
-  n_runs: 100
-eval:
-  n_arms: 10
-  n_runs: 100
+n_arms: 10
+n_runs: 100

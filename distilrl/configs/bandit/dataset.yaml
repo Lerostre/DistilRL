@@ -1,0 +1,6 @@
+dataset:
+  seq_len: 512
+  sample:
+    odd: 0
+    even: 0
+    uniform: 0

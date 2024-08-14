@@ -1,1 +1,2 @@
-arm_type: SMPyBandits.Arms.Bernoulli
+arm:
+  arm_type: SMPyBandits.Arms.Bernoulli

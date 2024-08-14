@@ -233,8 +233,8 @@ class BanditDT(DecisionTransformer):
         mse = nn.MSELoss()
         dist = batch["distribution"][0]
         predicted_actions = predicted_actions.softmax(axis=1).argmax(axis=1)
-        potential_reward = self.arm_distributions[dist][predicted_actions]
-        actual_reward = self.arm_distributions[dist][future_actions]
+        potential_reward = self.arm_distributions[dist][predicted_actions.cpu()]
+        actual_reward = self.arm_distributions[dist][future_actions.cpu()]
         mean_regret = mse(potential_reward, actual_reward).sqrt()
 
         res = {

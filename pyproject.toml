@@ -32,16 +32,6 @@ torchmetrics = "^1.4.1"
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
 
-[[tool.poetry.source]]
-name = "paas-python-libs"
-url = "https://nexus.sbmt.io/repository/paas-python-libs/simple"
-priority = "explicit"
-
-[[tool.poetry.source]]
-name = "sbmt-pypi-cache"
-url = "https://nexus.sbmt.io/repository/pypi/simple"
-priority = "primary"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
